@@ -38,7 +38,7 @@ app.use("/api/hotel", SingleHotelRouter);
 app.use('/api/wishlist',whislist)
 
 mongoose.connection.once("open", () => {
-  console.log("DB connected successfully....");
+  console.log("DB connected successfully......");
 
   app.listen(process.env.PORT || Port, () => {
     console.log("Hurray, server is up and running");
